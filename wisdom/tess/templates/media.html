@@ -1,0 +1,248 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/milogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.js'%}">
+    
+    
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>Miracle Foundation International</title>
+        
+  </head>
+   <!-- background video -->
+   <div class="navigate">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-dark text-dark">
+      <a class="navbar-brand" href="#"> <img src="{% static './img/miracle_fdn_logo.png'%}" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto list">
+          <li class="nav-item active">
+            <a class="nav-link internal" href="{% url 'tessurl:home' %}">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link internal" href="{% url 'tessurl:gallery' %}">GALLERY<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link internal" href="{% url 'tessurl:getinvolved' %}">GET INVOLVED <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link internal" href="#">MEDIA <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link internal" href="{% url 'tessurl:mission' %}"> OUR MISSION <span class="sr-only">(current)</span></a>
+          </li>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link internal" href="{% url 'tessurl:donate' %}"> DONATE <span class="sr-only">(current)</span></a>
+        </li>
+       
+      </ul>
+          
+         
+      </div>
+    </nav>
+  </div>
+  <!-- media -->
+  
+<div class="coverage">
+    <h3>Our Media Coverage </h3>
+    <h5>Miracle Foundation in the News</h5>
+    <p> We have been making headlines around the world. Help us amplify our voice by sharing these articles with your circle. Together, we can ensure that every child thrives and end the need for orphanages in our lifetime. </p>
+    <p> <b> F e a t u r e d  A r t i c l e s </b></p>
+</div>
+<div class="row god" style="width: 100%;">
+<div class="col press">
+    <img src="{% static '../static/csr.jpg'%}" alt=""> <br>
+    <a href="https://www.thehindubusinessline.com/specials/india-interior/kerala-child-care-institutions-help-children-return-to-the-warmth-of-family/article28725627.ece?utm_campaign=amp_article_share&utm_medium=referral&utm_source=whatsapp.com">The Hindu Business Line National News: Back to the Warmth of Family </a> <br>
+            <p>Read some heart-warming and personal accounts of how Miracle Foundation’s family reunification 
+            efforts are impacting children in Kerala.</p>
+
+</div>
+<div class="col press">
+    <img src="{% static '../static/busines line.jpg'%}" alt=""><br>
+    <a href="https://www.statesman.com/news/20190328/westlake-mom-works-to-help-orphaned-children-find-ther-way-home">The Statesman: Westlake Mom Works to Help Orphaned Children Find Their Way Home</a> <br>
+               <p>Read about the amazing effort Miracle Foundation President, Leslie Beasley, expends night and day to build orphaned and vulnerable children a better future.</p>
+
+</div>
+<div class="col press">
+    <img src="{% static '../static/statesman-272x42.png'%}" alt=""><br>
+    <a href="https://thecsrjournal.in/csr-top-5-npos-working-towards-childcare/">CSR Journal: Top 5 NPO’s Working in Childcare</a> <br>
+            <p>Miracle Foundation is listed as one of the top non profits in the World working in the childcare domain.</p>
+        
+
+
+</div>
+
+</div>
+
+<div class="row god" style="width: 100%;">
+    <div class="col press">
+        <img src="{% static '../static/entrepreneur-india-logo-300x76.jpg'%}" alt=""> <br>
+        <a href="https://www.entrepreneur.com/article/331121"> Entrepreneur India: Women are Driving Social Entrepreneurship</a> <br>
+                <p>We may need lion hearts for various odd ventures of the world but for social entrepreneurship, we need the tender mindset of a mother.</p>
+    
+    </div>
+    <div class="col press">
+        <img src="{% static '../static/WUSA_9_logo-293x300.png'%}" alt="" width="80rem" ><br>
+        <a href="https://www.wusa9.com/video/entertainment/television/programs/great-day-washington/road-to-a-better-community-the-miracle-foundation/65-c5325962-6f64-4a33-9fbb-e3fb3a43ce10">WUSA9-TV: Road to a Better Community: The Miracle Foundation</a> <br>
+                   <p>The Miracle Foundation is a nonprofit that’s dedicated to reuniting orphaned children with their families and founder Caroline Boudreaux is passionate about her work. See how Washington D.C.’s Easterns Automotive Group decided to lend a hand and help support this amazing cause.</p>
+    
+    </div>
+    <div class="col press">
+        <img src="{% static '../static/USA-Today-logo-300x121.jpg'%}" alt=""><br>
+        <a href="https://190xog308tca51yblb2p8xei-wpengine.netdna-ssl.com/wp-content/uploads/2018/05/USAToday_MothersDay_OpEd_May2018.pdf">USA Today: Let’s keep children in their family, if they can’t be with their mothers.</a> <br>
+                <p>“We believe in a future where there’s no longer a need for orphanages. And we believe we can get every institutionalized child into a loving family in our lifetime.” -Caroline Boudreaux</p>
+            
+    
+    
+    </div>
+    
+    </div>
+
+    <div class="row god" style="width: 100%;">
+        <div class="col press">
+            <img src="{% static '../static/ELLE_Magazine_Logo-300x123.png'%}" alt=""> <br>
+            <a href="https://www.elle.com/life-love/a20524540/mothers-day-loss-mother-figures/"> Elle.com: 7 Women on Their Unconventional Mother Figures </a> <br>
+                    <p>“Whatever I accomplish or wherever I go in this world, Auntie Caroline will always be a part of my life as a mother figure to me. Through her support she has given me the gifts of a quality education, strength, support and love.” -Kalpana Kindo</p>
+        
+        </div>
+        <div class="col press">
+            <img src="{% static '../static/abc.jpg'%}" alt="" ><br>
+            <a href="http://wjla.com/features/good-morning-washington/the-miracle-foundation-serving-institutionalized-children-around-the-world">Thrive Global: “In One Generation, We Can End the Suffering of Orphans, We Can Find Loving Families for Every One of Them” </a> <br>
+                       <p>Founder Caroline Boudreaux is featured in a revealing Q&A on Thrive Global, Ariana Huffington’s newest media platform focused on well-being.</p>
+        </div>
+        <div class="col press">
+            <img src="{% static '../static/Thrive-GLobal-300x154.jpg'%}" alt=""><br>
+            <a href="https://thriveglobal.com/">USA Today: Let’s keep children in their family, if they can’t be with their mothers.</a> <br>
+                    <p>“We believe in a future where there’s no longer a need for orphanages. And we believe we can get every institutionalized child into a loving family in our lifetime.” -Caroline Boudreaux</p>
+                
+        
+        
+        </div>
+        
+        </div>
+
+        <div class="row god" style="width: 100%;">
+            <div class="col press">
+                <img src="{% static '../static/forbes-logo-300x83.jpg'%}" alt=""> <br>
+                <a href="https://www.forbes.com/sites/break-the-future/2017/05/12/you-dont-have-to-have-a-baby-to-be-a-mother/?sh=e3b502863fef"> Forbes: You Don’t Have To Have A Baby To Be A Mother</a> <br>
+                        <p>We’ve developed a systematic, measurable, scalable way to improve the quality of care being given to parentless children, and we’re focused on expanding to support even more kids in need. Our goal is for every child to have a loving family and until that happens, Mother’s Day won’t have the integrity that it should.</p>
+            
+            </div>
+            <div class="col press">
+                <img src="{% static '../static/ajc.png'%}" alt="" ><br>
+                <a href="https://www.ajc.com/lifestyles/here-one-good-way-honor-your-mom-this-mother-day/l6K1xI1QWcHDAuWhNo7izL/">The Atlanta Journal-Constitution: Here’s one good way to honor your mom this Mother’s Day</a> <br>
+                           <p>For orphans with nowhere else to go, the Miracle Foundation works to ensure that children living in orphanages receive all their rights — food, water, health care, education … and plenty of love.</p>
+            </div>
+            <div class="col press">
+                <img src="{% static '../static/rolling stone.png'%}" alt=""><br>
+                <a href="hhttp://www.rollingstone.com/music/news/jay-z-coldplay-to-headline-inaugural-global-citizen-festival-in-india-w449244">Rolling Stone: Jay Z, Coldplay to Headline Inaugural Global Citizen Festival in India </a> <br>
+                        <p>Jay Z, Coldplay and Demi Lovato will perform in India on November 19th for the inaugural Global Citizen Festival in India. The show will feature several Indian artists and Bollywood celebrities in support of the Miracle Foundation.</p>
+                    
+            
+            
+            </div>
+            
+            </div>
+        
+            <div class="row god" style="width: 100%;">
+                <div class="col press">
+                    <img src="{% static '../static/Chicago_Tribune_Logo-300x46.png'%}" alt=""> <br>
+                    <a href="http://www.chicagotribune.com/lifestyles/stevens/ct-mothers-day-indian-orphanages-balancing-20160502-column.html">Chicago Tribune: If you take care of a mom, you take care of a child </a> <br>
+                            <p>“The ramifications of not having your parents are so vast,” Boudreaux said. “To survive that loss and grief and trauma and then be put in an institution where you don’t eat every day, through no fault of your own, is awful. Your mother is the one who fights for you. If you don’t have that basic thing, this world is just going to eat you up.”</p>
+                
+                </div>
+                <div class="col press">
+                    <img src="{% static '../static/logo-huffpost-300x43.png'%}" alt="" ><br>
+                    <a href="https://www.huffpost.com/entry/a-mothers-day-guide-of-gi_b_9693922">Huffpost Women: A Mother’s Day Guide of Gifts that Give Back </a> <br>
+                               <p>I can’t think of any better way to honor your mother by giving back to another mom in return.</p>
+                </div>
+                <div class="col press">
+                    <img src="{% static '../static/People-Magazine-Logo-300x127.png'%}" alt=""><br>
+                    <a href="http://www.people.com/article/caroline-boudreaux-miracle-foundation">People.com: Caroline Boudreaux Quits Her Corporate Job to Help Orphans in India  </a> <br>
+                            <p>We didn’t want to go into one orphanage and make it good. We wanted to develop a franchise methodology that can go into any orphanage.</p>
+                        
+                
+                
+                </div>
+                
+                </div>
+        
+                <div class="articles">
+                    <p><b>A r t i c l e s</b></p>
+                    <p><b>APN News:</b> <a href="https://www.apnnews.com/role-of-ngos-in-early-childhood-care-and-education/"> Role of NGOs in early childhood care and education (Jan 2021) </a></p>
+                    <p><b>India Today:</b> <a href="https://www.indiatoday.in/education-today/featurephilia/story/how-this-ngo-is-helping-orphaned-underprivileged-kids-continue-their-education-in-covid-19-lockdown-1737659-2020-11-03"> How This NGO is Helping Orphaned Underprivileged Kids Continue their Education in COVID 19 Lockdown (Nov 2020) </a></p>
+                    <p><b>Legacy Collective:</b> <a href="https://legacycollective.org/grant-recipient-update-miracle-foundation/"> Miracle Foundation, a 2020 Grant Recipient of Legacy Collection (October 2020) </a></p>
+                    <p><b>The CSR Journal: </b> <a href="https://thecsrjournal.in/ngos-educating-children-remote-learning-india/"> 4 NGOS in India educating kids online during COVID-19 (July 2020)</a></p>
+                    <p><b>The CSR Journal:</b> <a href="https://thecsrjournal.in/covid-ngos-health-hygiene-underprivileged-families-children-india/">Top 5 NGOs for underprivileged families & children during COVID-19 (June 2020)</a></p>
+                    <p><b>BW Disrupt:</b> <a href="http://bwdisrupt.businessworld.in/article/Women-Entrepreneurs-Working-In-The-Time-Of-Pandemic-To-Help-Underserved/15-06-2020-287353/">Women Entrepreneurs Working In The Time Of Pandemic To Help Underserved (June 2020)</a></p>
+                    <p><b>India TV:</b> <a href="https://www.indiatvnews.com/news/india/here-s-how-ngos-are-doing-their-bit-in-fight-against-coronavirus-625714">Here’s how NGOs are doing their bit in fight against coronavirus (June 2020)</a></p>
+                    <p><b>NDTV:</b> <a href="https://swachhindia.ndtv.com/delhi-based-ngo-ensures-childrens-right-to-nutrition-during-coronavirus-lockdown-46405/">Delhi Based NGO Ensures Children’s Right To Nutrition During Coronavirus Lockdown (June 2020)</a></p>
+                    <p><b>News 18 India:</b> <a href="https://www.news18.com/news/india/no-country-for-them-orphans-child-labourers-invisible-uncounted-collateral-victims-of-covid-19-crisis-2618229.html">Orphans, Child Laborers ‘Invisible and Uncounted’: Collateral Victims of Covid-19 Crisis (May 2020)</a></p>
+                    <p><b>IANS Life:</b> <a href="https://ianslife.in/food-fitness/parents-and-caregivers-support-children-and-build-psychological-resilience">Parents and Caregivers to Support Children and Build Psychological Resilience (May 2020)</a></p>
+                    <p><b>The Hans India:</b> <a href="https://www.thehansindia.com/telangana/hyderabad-miracle-foundation-resolving-education-disruptions-in-remote-areas-622625">Miracle Foundation Resolving Education Disruption in Remote Areas (May 2020)</a></p>
+                    <p><b>The CSR Journal:</b> <a href="https://thecsrjournal.in/mothers-day-2020-celebrate-lockdown/">Mother’s Day 2020:Best Ways to Celebrate in Lockdown (May 2020)</a></p>
+                    <p><b>CSR Mandate:</b> <a href="http://www.csrmandate.org/ngos-ensuring-health-and-hygiene-of-underprivileged-communities-during-the-pandemic/">NGOs Ensuring Health and Hygiene of Underprivileged Communities During the Pandemic (April 2020)</a></p>
+                    <p><b>Austin American Statesman: </b> <a href="https://www.statesman.com/story/news/local/westlake/2020/04/10/charities-benefit-from-westlake-ceos-program/1373045007/">Charities Benefit from Westlake CEO’s Program (April 2020)</a> <br> Miracle Foundation is the honored recipient of Z-5’s new 50 for 50 charitable program.</p>
+                    <p><b>Yahoo News:</b> <a href="https://in.search.yahoo.com/?fr2=inr">NGO’s Playing Crucial Role in Providing Food, Sanitation, Shelter for Needy (April 2020)</a></p>
+                    <p><b>The Statesman (India):</b> <a href="https://www.thestatesman.com/india/miracle-foundation-india-to-ensure-food-for-children-during-lockdown-1502874949.html">Miracle Foundation India to Ensure Food for Children During Lockdown (April 2020)</a></p>
+                    <p><b>New Indian Express:</b> <a href="https://www.newindianexpress.com/cities/delhi/2020/apr/08/great-care-for-children-during-coronavirus-lockdown--by-miracle-foundation-india-2127264.html">Great Care for Children During Coronavirus Lockdown by Miracle Foundation India (April 2020)</a></p>
+                    <p><b>The Pioneer:</b> <a href="https://www.dailypioneer.com/2019/pioneer-health/tiptop-tiptop-2019-10-22.html">World Mental Health Day (October 2019)</a> <br> In light of this year’s theme, ‘Suicide Prevention’, Miracle Foundation’s campaign was aimed at cultivating the social and emotional development of the children under their care.</p>
+                    <p><b>CSR Mandate: </b> <a href="http://www.csrmandate.org/dreams-do-come-true-miracle-foundation-provides-new-lease-of-life-for-orphaned-and-vulnerable-children/"> Dreams Do Come True: Miracle Foundation Provides New Lease on Life for Orphaned and Vulnerable Children. (September 2019)</a><br>A thoughtful and thorough interview which details the rewarding work we do for these children.</p>
+                    <p><b>Hill Country News: </b> <a href="http://www.hillcountrynews.com/stories/a-climb-for-charity,79791">A Climb for Charity (April 2019)</a><br>David Lesniak and his team hiked more than eight hours in order to reach the summit of Mount Kilimanjaro, the highest peak in Africa at 19,341 ft. Along the way, they raised $20,000 for Miracle Foundation.</p>
+                    <p><b>The Statesman:</b> <a href="https://www.statesman.com/news/20190328/westlake-mom-works-to-help-orphaned-children-find-ther-way-home">Westlake Mom Works to Help Orphaned Children Find Their Way Home (March 2019)</a><br>Read about the amazing effort Miracle Foundation President, Leslie Beasley, expends night and day to build orphaned and vulnerable children a better future.</p>
+                    <p><b>The Statesman:</b> <a href="https://www.thestatesman.com/books-education/long-term-impacts-institutional-care-children-1502741384.html">Long-term Impacts of Institutional Care on Children (March 2019)</a><br>Miracle Foundation India Country Head, Nivedita Das Gupta, explains how the very foundation of institutional care is to provide care and education to abandoned and orphaned children, but the standard of such facilities varies between being the optimum level of care to being highly inadequate.</p>
+                    <p><b>Dividends Magazine (Mississippi State University):</b> <a href="https://issuu.com/msubusiness/docs/msudividends_fall2018_final__002_/12">Open Heart, Open Arms (December 2018)</a><br>Leslie Beasley serves as President of Miracle Foundation, a non-profit organization that focuses on children living in orphanages around the world and aims to end institutional care of children by 2040.</p>
+                    <p><b>KTXA-TV (CBS Dallas/Fort Worth):</b> <a href="https://dfw.cbslocal.com/2018/12/19/plugged-in-giving-back/">“Home for the Holidays” (December 2018)</a><br>Today there are 8 million children living in orphanages around the world. Miracle Foundation is working to give each of these children a “Home For The Holidays.”</p>
+                    <p><b>WUPA-TV (CW Atlanta):</b> <a href="https://digitalmedianation.com/2018/12/18/chris-snellgrove-shares-the-miracle-foundations-work-to-give-lifes-necessities-to-orphanages-and-reunite-children-with-their-families/">“Home for the Holidays” (December 2018)</a><br>‘Tis the season of giving and what better gift than the gift of helping children in need! Chris Snellgrove spoke on Focus Atlanta CW 69 this past Sunday to bring awareness to Miracle Foundation’s “Home for Holidays” campaign.</p>
+                    {% for a in fam %}
+                    <p><b>{{a.caption}}</b><a href="{{a.hes}}">{{a.link}}</a> <br> {{a.main_news}} </p>
+                    {% endfor %}
+                    
+
+                    
+
+                    
+
+                </div>
+
+            
+<!-- TABLES -->
+<!-- <table style="width: 100%;">
+    <tr>
+        <td class="press"> <img src="../static/csr.jpg" alt=""> <br>
+            <a href="https://www.thehindubusinessline.com/specials/india-interior/kerala-child-care-institutions-help-children-return-to-the-warmth-of-family/article28725627.ece?utm_campaign=amp_article_share&utm_medium=referral&utm_source=whatsapp.com">The Hindu Business Line National News: Back to the Warmth of Family </a> <br>
+            Read some heart-warming and personal accounts of how Miracle Foundation’s family reunification 
+            efforts are impacting children in Kerala.</td>
+        
+        <td class="press"><img src="../static/busines line.jpg" alt=""> <br>
+            <a href="https://www.statesman.com/news/20190328/westlake-mom-works-to-help-orphaned-children-find-ther-way-home">The Statesman: Westlake Mom Works to Help Orphaned Children Find Their Way Home</a> <br>
+                Read about the amazing effort Miracle Foundation President, Leslie Beasley, expends night and day to build orphaned and vulnerable children a better future.</td>
+        
+        <td class="press"><img src="../static/csr.jpg" alt=""> <br>
+            <a href="https://thecsrjournal.in/csr-top-5-npos-working-towards-childcare/">CSR Journal: Top 5 NPO’s Working in Childcare</a> <br>
+                    Miracle Foundation is listed as one of the top non profits in the World working in the childcare domain.</td>
+        
+       
+    </tr>
+    <tr>
+        <td class="press"><a href="https://www.wusa9.com/video/entertainment/television/programs/great-day-washington/road-to-a-better-community-the-miracle-foundation/65-c5325962-6f64-4a33-9fbb-e3fb3a43ce10">WUSA9-TV: Road to a Better Community: The Miracle Foundation</a> <br>
+            The Miracle Foundation is a nonprofit that’s dedicated to reuniting orphaned children with their families and founder Caroline Boudreaux is passionate about her work. See how Washington D.C.’s Easterns Automotive Group decided to lend a hand and help support this amazing cause.</td>
+        
+        <td class="press"><a href="">The Statesman: Westlake Mom Works to Help Orphaned Children Find Their Way Home</a> <br>
+                Read about the amazing effort Miracle Foundation President, Leslie Beasley, expends night and day to build orphaned and vulnerable children a better future.</td>
+        
+        <td class="press"><a href="https://thecsrjournal.in/csr-top-5-npos-working-towards-childcare/">CSR Journal: Top 5 NPO’s Working in Childcare</a> <br>
+                    Miracle Foundation is listed as one of the top non profits in the World working in the childcare domain.</td>
+        
+       
+    </tr>
+</table> -->
+
+{% include 'footer.html'%}

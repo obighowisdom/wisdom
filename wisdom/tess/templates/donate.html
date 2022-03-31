@@ -1,0 +1,142 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/milogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.js'%}">
+    
+    
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>Miracle Foundation International</title>
+        
+  </head>
+   <!-- background video -->
+   <div class="navigate">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-dark text-dark">
+      <a class="navbar-brand" href="#"> <img src="{% static './img/miracle_fdn_logo.png'%}" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto list">
+          <li class="nav-item active">
+            <a class="nav-link internal" href="{% url 'tessurl:home' %}">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link internal" href="{% url 'tessurl:gallery' %}">GALLERY<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link internal" href="{% url 'tessurl:getinvolved' %}">GET INVOLVED <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link internal" href="{% url 'tessurl:media' %}">MEDIA <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link internal" href="{% url 'tessurl:mission' %}"> OUR MISSION <span class="sr-only">(current)</span></a>
+          </li>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link internal" href="{% url 'tessurl:donate' %}"> DONATE <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <button type="button" class="donor"><a href="#">DONATE</a></button> -->
+      </ul>
+          
+         
+      </div>
+    </nav>
+  </div>
+  <!-- DONATE -->
+<!-- DONATE -->
+  
+     
+<div class="container">
+  <div class="title">Please make a donation to any of our crypto wallet below and fill out the form <br>
+     <b> Anonymous, do not fill the form</b></div>
+  <div class="row fill">
+    {% for w in wis %}
+    <div class="col">
+      <img src="{{w.image.url}}" alt="" style="width: 20rem;">
+      <p class="wallet"> <b>{{w.caption}}</b></p>
+    </div>
+    {% endfor %}
+    
+    
+  </div>
+            <form action="#" method="POST"> {% csrf_token %}
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details"> Full Name </span>
+            <input type="text" placeholder="Enter your full name" name="name" required>
+          </div>
+          <div class="input-box">
+            <span class="details"> Email </span>
+            <input type="email" placeholder="Enter your email address" name="email" required>
+          </div>
+          <div class="input-box">
+            <span class="details"> Occupation </span>
+            <input type="text" placeholder=" Enter your occupation " name="occupation" >
+          </div>
+          <div class="input-box">
+            <span class="details"> Address </span>
+            <input type="text" id="address" placeholder=" Enter your address " name="address" required>
+          </div>
+          <div class="input-box">
+            <span class="details"> State/Province </span>
+            <input type="text" id="state" placeholder="Enter your state/province" name="state" required>
+          </div>
+          <div class="input-box">
+            <span class="details"> Country </span>
+            <input type="text" id="country" placeholder="Enter your country" name="country" required>
+          </div>
+          <div class="input-box">
+            <span class="details"> How did you know about us? </span>
+            <input type="text" placeholder="Optional" name="optional" >
+          </div>
+          
+          <div class="input-box">
+            <span class="details"> Comment?</span>
+            <input type="text" placeholder="Please leave a comment..." name="proof" required>
+          </div>
+
+          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+      </form>
+      <div class="title">Your 1$ means a lot to us as we strived on making this foundation provide the basic needs that these orphans need and to make them have the ultimate love and care a normal child should have. <br>Thank you for joining the Miracle Foundation family. Your donation will have on-the-ground impact. For monthly donations, your gifts will help even more children. Here are a few examples to help you picture your generosity in action.
+       <br> $50 provides nutritious food to 3 children each month.
+        
+        <br>$100 provides a month of support for a child waiting to go home.
+        
+       <br> $150 provide a tablet + a year of wifi to a new child each month.
+        
+       <br> $250 provides resources to support a family when a child returns home. <br> WE ARE VERY GRATEFUL FOR YOUR SUPPORT!!!<br>
+        <b></b></div>
+      
+    </div>
+
+  
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+
+  $("#submit").click(function(){
+    swal({
+          title: "Successful!",
+          text: "A mail have been sent to your email",
+          icon: "success",
+          button: "ok",
+        });
+  });
+  
+</script>
+
+
+    {% include 'footer.html' %}
+
+    

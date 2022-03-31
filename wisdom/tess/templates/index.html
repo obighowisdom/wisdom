@@ -1,0 +1,196 @@
+{% include 'header.html' %}
+{% load static %}
+{% block content %}
+
+
+      <!-- Second phase -->
+      <div class="analysis">
+        <center>
+        <div class="row live" style="width: 100%;">
+          <div class="col">
+            <center><img src="{% static './help1.svg'%}" style="width: 20%;" alt=""></center>
+            <p>Children's live improved</p>
+          </div>
+          <div class="col">
+            <center><img src="{% static './help1.svg'%}" style="width: 20%;" alt=""></center>
+           <p>Government workers and childcare providers trained</p>
+          </div>
+          <div class="col">
+            <center><img src="{% static './help1.svg'%}" style="width: 20%;" alt=""></center>
+            <p>Children reunited with families</p>
+          </div>
+        </div>
+        </center>
+        
+      </div>
+      <!-- Core Initiative -->
+      <div class="core">
+        <center><h3>OUR CORE  INITIATIVES</h3></center>
+        <center>
+        <div class="row" style="width: 100%;">
+          <div class="col share">
+            <div class="card text-white share">
+              <img src="../static/images (3).jpeg" class="card-img" alt="...">
+              <div class="image">
+                
+                <p class="foster">Connect the US Foster Care System <br>  Reports, services, agencies, regulations. The US Foster Care System can be frustrating to manage for foster families. But our new FosterShare™ app is changing all that.</p>
+                
+                <button type="button" class="don"><a href="{% url 'tessurl:donate' %}"> DONATE </a> </button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col share">
+            <div class="card  text-white share">
+              <img src="{% static '../static/images (6).jpeg'%}" class="card-img" alt="...">
+              <div class="image">
+                
+                <p class="foster">Prevent Children from Entering the System <br>The orphan crisis will never end until we stop it at the source. This means: Identifying vulnerable families long before the idea of child placement is necessary. Here’s how we do it.</p>
+                <button type="button" class="don"><a href="{% url 'tessurl:donate' %}"> DONATE </a> </button>
+              </div>
+             
+            </div>
+            
+          </div>
+          <div class="col share">
+            <div class="card text-white share">
+              <img src="{% static '../static/images (1).jpeg'%}" class="card-img" alt="...">
+              <div class="image">
+                
+                <p class="foster">Transition Children from Orphanages to Families <br> It’s time to move from orphanages to families, and we have a proven field-tested method to make sure this is done safely. Help us bring them home.</p>
+                
+                <button type="button" class="don"><a href="{% url 'tessurl:donate' %}"> DONATE </a> </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </center>
+      </div>
+      <!-- how we measure success -->
+      <div class="row thrive" style="width: 100%;">
+        <div class="col">
+          <img src="{% static './Thrive-Scale-anim-3.gif'%}" alt="" style="width: 100%;" >
+        </div>
+        <div class="col">
+          <button class="measure"> OUR SUCCESS</button>
+        </div>
+      </div>
+      <!-- next section -->
+      <div class="next">
+        <center><p>Miracle Foundation is part of a global network of non-profit organizations leading the worldwide movement to end the need for orphanages in our lifetime.</p></center>
+      </div>
+      <!-- media coverage -->
+      <div class="media" style="width: 100%;">
+        <center>
+        <div class="row" style="width: 100%;">
+          <div class="col" style="width: 100%;">
+            <img src="{% static './media coverage.png'%}" alt="" style="width: 100%;">
+          </div>
+          <div class="col">
+            <img src="{% static './unicef.png'%}" alt="">
+          </div>
+          <div class="col" style="width: 100%;">
+            <img src="{% static './people.png'%}" alt="" style="width: 100%;" >
+          </div>
+        </div>
+        <a href="{% url 'tessurl:media' %}">
+        <button>Media Coverage</button>
+      </a>
+      </center>
+      </div>
+      <!-- picture -->
+      <div>
+        <img src="{% static './la.jpg'%}" alt="" style="width: 100%;">
+      </div>
+      <!-- Assiist us -->
+      <div class="assist">
+        <center>
+        <div class="row" style="width: 100%;">
+          <div class="col lest">
+            <center>
+            <div class="card">
+               <div class="card-body">
+                <p class="card-text">Your one time donation will help a child to thrive. Don't hesitate to donate, it is of utmost importance to us, helping us reunite the children with their families. Help Now</p>
+                <a href="{% url 'tessurl:donate' %}" class="btn btn-primary now">Help Now</a>
+              </div>
+            </div>
+          </center>
+
+          </div>
+          <div class="col lest">
+            <center>
+            <div class="card">
+              <div class="card-body">
+              
+               <p class="card-text">There is no more powerful way to support the children we serve than by becoming a monthly contributor. Your charitable giving month after month keeps us.</p>
+               <a href="{% url 'tessurl:donate' %}" class="btn btn-primary">Support Our Work </a>
+             </div>
+           </div>
+          </center>
+
+          </div>
+          <div class="col lest">
+            <center>
+            <div class="card">
+              <div class="card-body">
+               
+               <p class="card-text">It takes a village to raise a child. The inspiring individuals who join commit to support orphaned and vulnerable Indian children over a five-year-period..</p>
+               <a href="{% url 'tessurl:donate' %}" class="btn btn-primary">Join The Village Today</a>
+             </div>
+           </div>
+          </center>
+
+          </div>
+          <div class="col lest">
+            <center>
+            <div class="card">
+              <div class="card-body">
+               
+               <p class="card-text">Legacy Partners commit to three years of high-level giving. They are changemakers, ending the orphan crisis by providing safe and loving homes for Children.</p>
+               <a href="{% url 'tessurl:donate' %}" class="btn btn-primary">Make a Difference</a>
+             </div>
+           </div>
+          </center>
+          </div>
+        </div>
+      </center>
+      </div>
+      <!-- about us -->
+      <div class="about">
+        <h3> ABOUT </h3>
+      <p> We know the very best thing for a child is to be part of a loving family—it’s where they thrive. That’s why everything we do as a children’s charity is designed to accomplish just that.
+
+        Our goal is to replace orphanages with families for every child dreaming of home. We believe that together, we can change the way we care for children and help to get them into stable, loving, nurturing environments.
+        
+        Thanks to you, we are currently seeing our methodology used in more than 300 orphanages in India and are helping more than 15,000 vulnerable children and orphans to thrive.
+        
+        We believe in partnerships, and with generous gifts from people like you, we can make their dream of living with a family a reality.
+      </p>
+</div>
+
+<!-- modal -->
+<div class="bg-modal" id="modal-container">
+  <div class="modal-content">
+    <div class="close" id="close">+</div>
+    <div class="modal-title">
+      <h6>Suscribe To Receive Updates </h6>
+      <p>Join our mailing list to receive the latest news and updates from our team.</p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Enter Your Full Names"> 
+      <input type="email" placeholder="Enter Your E-Mail">
+      <button type="submit"> Join The Movement</button>
+    </div>
+  </div>
+</div>
+
+
+      <!-- footer -->
+      {% include 'footer.html' %}
+    
+</body>
+
+{% endblock content %}
+
+</html>
